@@ -21,7 +21,7 @@
 
   @font-face {
     font-family: 'Migra';
-    src: url('../../public/fonts/migra-medium.woff2') format('woff2') ;
+    src: url('../../public/fonts/migra-medium.woff2') format('woff2') ; 
   }
 
 }
