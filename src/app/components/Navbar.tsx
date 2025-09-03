@@ -1,27 +1,23 @@
-'use client'
-import React, { useEffect, useState } from 'react';
+'use client';
+import React from 'react';
+import Link from 'next/link';
 
-const Navbar = () => {
-  const [scrollY, setScrollY] = useState(0);
+interface NavbarProps {
+  opacity: number;
+}
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const opacity = Math.min(scrollY / 800, 1) * 0.9;
-  const blurStrength = Math.min(opacity * 6, 6);
+const Navbar: React.FC<NavbarProps> = ({ opacity }) => {
+  // Cap opacity at 0.9 for background color
+  const cappedOpacity = Math.min(opacity, 0.8);
+  // Calculate blur strength based on capped opacity
+  const blurStrength = Math.min(cappedOpacity * 6, 6);
 
   return (
     <nav className="sticky top-0 z-50">
       <section
         className="px-5 pt-6 sm:px-10 sm:pt-9 transition-all duration-300"
         style={{
-          backgroundColor: `rgba(19, 19, 19, ${opacity})`,
+          backgroundColor: `rgba(19, 19, 19, ${cappedOpacity})`,
           backdropFilter: `blur(${blurStrength}px)`,
           WebkitBackdropFilter: `blur(${blurStrength}px)`,
         }}
@@ -32,9 +28,15 @@ const Navbar = () => {
             <div className="hidden sm:block uppercase font-neue text-cozywhite text-xl font-semibold">Project Manager • Full - Stack Developer</div>
           </div>
           <ul className="sm:text-xl flex space-x-1 text-white font-neue font-medium text-base">
-            <li><a href="/works">works,</a></li>
-            <li><a href="/about">about,</a></li>
-            <li><a href="/contact">contact</a></li>
+            <li>
+              <Link href="#works" className="hover-underline-animation">works,</Link>
+            </li>
+            <li>
+              <Link href="#about" className="hover-underline-animation">about,</Link>
+            </li>
+            <li>
+              <Link href="#contact" className="hover-underline-animation">contact</Link>
+            </li>
           </ul>
         </div>
       </section>
