@@ -3,7 +3,7 @@
 import { Canvas } from '@react-three/fiber';
 import { Suspense, useState, useEffect } from 'react';
 import SpinningModel from './SpinningModel';
-import { Bounds, OrbitControls } from '@react-three/drei';
+import { Bounds } from '@react-three/drei';
 
 const ModelCanvas = () => {
   const [fov, setFov] = useState(70);

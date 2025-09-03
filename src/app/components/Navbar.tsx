@@ -24,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({ opacity }) => {
       >
         <div className="flex flex-row justify-between border-b border-b-cozywhite/65 sm:pb-6 pb-3 ">
           <div className="flex flex-row gap-9">
-            <a className="text-lg sm:text-xl font-migra text-white" href="/">Christopher Glenn</a>
+            <Link className="text-lg sm:text-xl font-migra text-white" href="/">Christopher Glenn</Link>
             <div className="hidden sm:block uppercase font-neue text-cozywhite text-xl font-semibold">Project Manager • Full - Stack Developer</div>
           </div>
           <ul className="sm:text-xl flex space-x-1 text-white font-neue font-medium text-base">

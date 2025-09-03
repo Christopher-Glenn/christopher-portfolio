@@ -42,7 +42,7 @@ html{
 /* component custom styles */
 @layer components {
   .heading-style {
-    @apply uppercase text-cozywhite font-tusker sm:text-[18rem] text-[7.5rem] font-medium whitespace-nowrap will-change-transform;
+    @apply uppercase text-cozywhite font-tusker sm:text-[15rem] text-[7.5rem] font-medium whitespace-nowrap will-change-transform;
   }
 }
 

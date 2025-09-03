@@ -8,7 +8,7 @@ type MarqueeProps = {
 }
 
 
-export default function MarqueeButton({title,classname,link}:MarqueeProps) {
+export default function MarqueeButton({title,classname}:MarqueeProps) {
 
   return (
     <a
