@@ -22,7 +22,7 @@ export default function About({ id }: { id?: string }) {
           building websites and mobile applications. I manage every aspect of freelance projects
           on my own, from design and development to testing and upkeep.
           As the project manager of a startup with launched, profitable products, I also do well in
-          team settings. I've collaborated extensively with fintech startups to develop software that
+          team settings. I&rsquo;ve collaborated extensively with fintech startups to develop software that
           offers practical benefits.
         </div>
         <div className="sm:w-[45rem] sm:h-auto h-[22rem] w-full pt-5 sm:pt-0">
