@@ -7,7 +7,7 @@ import { Group } from 'three';
 
 const SpinningModel = () => {
   const modelRef = useRef<Group>(null);
-  const gltf = useGLTF('/3d/christopherColumbus.glb');
+  const gltf = useGLTF('/3d/optimized-model.glb');
   const [scale, setScale] = useState(5);
   const [position, setPosition] = useState([0, -2.2, 0.3]);
 

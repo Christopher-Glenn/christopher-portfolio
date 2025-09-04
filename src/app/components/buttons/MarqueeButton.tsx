@@ -2,7 +2,6 @@
 
 type MarqueeProps = {
   title: string
-  link?: string
   classname:string
   fn?: () => void
 }
