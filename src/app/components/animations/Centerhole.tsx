@@ -56,7 +56,7 @@ export default function CenterHoleOverlay({ state }: { state?: "diamond" | "expa
   `;
 
   return (
-    <div className="fixed inset-0 z-999 pointer-events-none">
+    <div className="sm:block hidden fixed inset-0 z-999 pointer-events-none">
       <svg className="absolute top-0 left-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <mask id="centerHoleMask">

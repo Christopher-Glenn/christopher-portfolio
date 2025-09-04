@@ -1,8 +1,11 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "Christopher Bedis",
   description: "Portfolio of Your Name",
+  icons: {
+    icon: "/favicon.png",
+  }
 };
 
 export default function RootLayout({

@@ -57,31 +57,31 @@ export default function Hero() {
           <h1 className="font-maelstrom text-8xl sm:text-[12rem] text-cozywhite">
               {day.toString().padStart(2, '0')}
             </h1>
-          <div className="flex flex-col pl-2 text-cozywhite mt-auto pb-10">
-            <h3 className="font-migra lowercase text-4xl">{month}</h3>
-            <h3 className="font-neue font-medium text-2xl leading-none">
+          <div className="flex flex-col pl-0 sm:pl-2 text-cozywhite mt-auto pb-4 sm:pb-10">
+            <span className="font-migra lowercase font-medium text-base sm:text-3xl">{month}</span>
+            <span className="font-neue font-semibold text-sm sm:text-xl leading-none">
               available <br /> for work
-            </h3>
+            </span>
           </div>
         </div>
       </div>
    
-      <div className="flex flex-col justify-between sm:flex-row sm:px-10 px-4">
+      <div className="flex flex-col justify-between sm:flex-row sm:px-10 px-4 sm:-translate-y-16">
         <section className="flex flex-col sm:w-[45rem] w-60 space-y-0">
-          <p className="text-skintone font-migra sm:text-[2.8rem] text-[1.2rem] font-medium sm:leading-none">
+          <p className="text-skintone font-migra sm:text-3xl text-[1.2rem] font-medium sm:leading-none">
             creative
           </p>
-          <div className="flex flex-row overflow-visible h-[7.5rem] md:overflow-hidden md:h-[17.5rem] sm:leading-none">
+          <div className="flex flex-row overflow-visible h-[7.5rem] md:overflow-hidden md:h-[15.5rem] sm:leading-none">
             <h1 className="heading-style">Software</h1>
           </div>
-          <div className="overflow-visible h-auto md:overflow-hidden md:h-[17.5rem] sm:leading-none sm:pt-0 pt-3">
+          <div className="overflow-visible h-auto md:overflow-hidden md:h-[15.5rem] sm:leading-none sm:pt-0 pt-3">
             <h1 className="heading-style">Engineer</h1>
           </div>
         </section>
-        <div className="flex flex-col items-center">
-          <div className="sm:text-[2.2rem] text-[0.875rem] font-neue font-bold text-cozywhite sm:w-[46rem] sm:pt-50 pt-0">
-            <AscendText className="sm:pl-50 pl-32 uppercase">
-              i am a fullstack developer
+        <div className="flex flex-col items-end sm:pt-40">
+          <div className="sm:text-3xl text-sm font-neue font-bold text-cozywhite sm:w-[36rem] pt-0">
+            <AscendText className="text-right uppercase">
+              I am a fullstack developer
             </AscendText>
             <AscendText>
               AND TECHNICAL PROJECT MANAGER BASED IN THE PHILIPPINES. I HAVE MANY YEARS
@@ -89,7 +89,7 @@ export default function Hero() {
               LOVE PIZZA, CATS AND ART.
             </AscendText>
           </div>
-          <div className="sm:pl-[28rem] pl-[10rem] sm:pt-[0rem] pt-[1rem]">
+          <div className="sm:pl-[28rem] pl-[10rem] sm:pt-6 pt-4">
             <MarqueeButton title="Contact Me" classname="bg-none text-white" />
           </div>
         </div>

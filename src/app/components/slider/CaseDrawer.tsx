@@ -54,6 +54,7 @@ export default function Example() {
                     <DrawerProjects name='Spark-Hub' role='Development' year={2025} />
                     <DrawerProjects name='Paul-Kaldi' role='Project Manager, Development' year={2025} />
                     <DrawerProjects name='RediPost' role='Development' year={2024} />
+                    <DrawerProjects name='Tiringbanay Infosite' role='Development' year={2024} />
                     <DrawerProjects name='Binhi Website' role='Development' year={2023} />
                     <DrawerProjects name='USC Infosite' role='Development' year={2023} />
                   </section>
