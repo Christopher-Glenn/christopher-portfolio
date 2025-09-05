@@ -8,29 +8,36 @@ import { useScrollOpacity } from '../../lib/useScrollOpacity';
 import CenterHoleOverlay from './components/animations/Centerhole';
 import Cases from './components/OtherCases';
 import Contacts from './components/Contacts';
+import Image from 'next/image';
 
 export default function Home() {
   const opacity = useScrollOpacity();
 
   return (
     <main className="relative min-h-screen">
-      <div
-        className="fixed inset-0 -z-20 bg-[#131313] sm:bg-[url('/images/heropage-bg.webp')] bg-cover bg-no-repeat bg-left-top"
-      />
+     <div className="fixed inset-0 -z-20 bg-[#131313]">
+        <Image
+          src="/images/heropage-bg.webp"
+          alt="background-image"
+          fill
+          priority
+          className="object-cover object-left-top"
+        />
+      </div>
       <div
         className="fixed inset-0 -z-10 hidden sm:block sm:transition-all sm:duration-300"
         style={{ backgroundColor: `rgba(19, 19, 19, ${opacity})` }}
       />
-      
+
       <CenterHoleOverlay />
 
       <Navbar opacity={opacity} />
 
       <Hero />
-      <About id="about"/>
-      <Works id="works"/>
+      <About id="about" />
+      <Works id="works" />
       <Cases />
-      <Contacts id="contact"/>
+      <Contacts id="contact" />
     </main>
   );
 }
