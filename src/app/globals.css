@@ -17,21 +17,25 @@
   @font-face {
     font-family: 'Tusker';
     src: url('../../public/fonts/TuskerGrotesk-2500Medium.woff2') format('woff2');
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'Neue';
     src: url('../../public/fonts/NeueMontreal-Regular.woff2') format('woff2') ;
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'Migra';
     src: url('../../public/fonts/migra-medium.woff2') format('woff2') ; 
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'Maelstrom';
     src: url('../../public/fonts/maelstrom-sans-bold.woff2') format('woff2') ;
+    font-display: swap;
   }
 }
 

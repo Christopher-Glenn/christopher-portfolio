@@ -10,7 +10,7 @@ export default function Works({ id }: { id?: string }) {
       <div className='flex flex-row ' >
         <div className='flex sm:pl-50 flex-row'>
           <Image 
-            src="/images/decagramStar.png"
+            src="/images/decagramStar.webp"
             className='h-auto sm:w-14 w-6'
             width={24}
             height={24}
@@ -75,7 +75,7 @@ export default function Works({ id }: { id?: string }) {
         <div className="sm:block hidden img-hover-zoom w-[12rem] h-[25rem] sm:w-[18rem] sm:h-[33rem] sm:pt-0 pt-6 cursor-pointer order-2 sm:order-2 relative">
           <a href="https://paul-kaldi-coffee.vercel.app/home">
             <Image
-              src="/images/works-1.jpg"
+              src="/images/works-1.webp"
               alt="paul-kaldi"
               fill
               className="object-cover"
@@ -89,7 +89,7 @@ export default function Works({ id }: { id?: string }) {
         <div className='relative img-hover-zoom w-[20rem] h-[11.7rem] sm:w-[30rem] sm:h-[17rem] cursor-pointer mt-8 sm:mt-26 '>
           <a href='https://binhi.wvsu.edu.ph/'>
             <Image
-              src="/images/works-2.png"
+              src="/images/works-2.webp"
               alt='Binhi Website'
               fill
               className='object-cover'
@@ -109,7 +109,7 @@ export default function Works({ id }: { id?: string }) {
         <div className='relative img-hover-zoom w-[20rem] h-[11.7rem] sm:w-[30rem] sm:h-[17rem] cursor-pointer mt-8 sm:mt-26 justify-self-auto sm:justify-self-end'>
           <a href='https://cict.wvsu-fundays.com/'>
             <Image
-              src="/images/works-3.png"
+              src="/images/works-3.webp"
               alt='CICT fundays'
               fill
               className='object-cover'
@@ -136,7 +136,7 @@ export default function Works({ id }: { id?: string }) {
         <div className='relative img-hover-zoom w-[20rem] h-[11.7rem] sm:w-[35rem] sm:h-[20rem] cursor-pointer mt-8 sm:mt-26 '>
           <a href='https://wvsu-usc.org/'>
             <Image
-              src="/images/works-4.png"
+              src="/images/works-4.webp"
               alt="USC Cite"
               fill
               className='object-cover'

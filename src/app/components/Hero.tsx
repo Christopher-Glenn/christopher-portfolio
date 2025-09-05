@@ -50,7 +50,7 @@ export default function Hero() {
           onMouseLeave={() => setOverlayState("expanded")}
         >
           <img
-            src="/images/decagramStar.png"
+            src="/images/decagramStar.webp"
             alt="decagram-star"
             className="w-6 sm:w-14 h-auto object-contain pb-32"
           />
