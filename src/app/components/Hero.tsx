@@ -3,7 +3,6 @@
 import MarqueeButton from './buttons/MarqueeButton';
 import AscendText from './animations/AscendText';
 import React, { useState, useEffect } from 'react';
-import CenterHoleOverlay from './animations/Centerhole'; 
 
 const monthNames = [
   'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -41,13 +40,10 @@ export default function Hero() {
 
   return (
     <div className="relative">
-      <CenterHoleOverlay state={overlayState} />
 
       <div className="flex sm:pt-12 sm:pl-96 justify-center">
         <div
           className="flex flex-row sm:h-50 sm:w-90 h-25 w-50 relative z-10"
-          onMouseEnter={() => setOverlayState("diamond")}
-          onMouseLeave={() => setOverlayState("expanded")}
         >
           <img
             src="/images/decagramStar.webp"

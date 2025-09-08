@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen">
-     <div className="fixed inset-0 -z-20 bg-[#131313]">
+     <div className="fixed inset-0 -z-20 sm:bg-[#131313]">
         <Image
           src="/images/heropage-bg.webp"
           alt="background-image"
@@ -24,10 +24,6 @@ export default function Home() {
           className="object-cover object-left-top"
         />
       </div>
-      <div
-        className="fixed inset-0 -z-10 hidden sm:block sm:transition-all sm:duration-300"
-        style={{ backgroundColor: `rgba(19, 19, 19, ${opacity})` }}
-      />
 
       <CenterHoleOverlay />
 
