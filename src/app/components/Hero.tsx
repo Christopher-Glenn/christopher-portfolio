@@ -3,6 +3,7 @@
 import MarqueeButton from './buttons/MarqueeButton';
 import AscendText from './animations/AscendText';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const monthNames = [
   'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -16,7 +17,6 @@ export default function Hero() {
 
   const [day, setDay] = useState(0);
   const [month, setMonth] = useState('');
-  const [overlayState, setOverlayState] = useState<"expanded" | "diamond">("expanded");
 
   useEffect(() => {
     let count = 0;
@@ -45,11 +45,14 @@ export default function Hero() {
         <div
           className="flex flex-row sm:h-50 sm:w-90 h-25 w-50 relative z-10"
         >
-          <img
+          <Image 
             src="/images/decagramStar.webp"
-            alt="decagram-star"
-            className="w-6 sm:w-14 h-auto object-contain pb-32"
+            alt='decagram-star'
+            className='h-auto sm:w-14 w-6 object-contain pb-32'
+            width={56}
+            height={56}
           />
+
           <h1 className="font-maelstrom text-8xl sm:text-[12rem] text-cozywhite">
               {day.toString().padStart(2, '0')}
             </h1>

@@ -162,7 +162,7 @@ function ProjectSection({
       case 'left-image':
         return 'sm:grid-cols-[0.9fr_2fr]'
       case 'right-image':
-        return 'sm:grid-cols-[8fr_5fr]'
+        return 'sm:grid-cols-[0.4fr_0fr]'
       case 'right-image-large':
         return 'sm:grid-cols-[3fr_1fr]'
       default:

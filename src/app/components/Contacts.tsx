@@ -4,7 +4,7 @@ import React from 'react'
 
 const Contacts = ({ id }: { id?: string }) => {
   return (
-    <div id={id} >Contcts</div>
+    <div id={id} ></div>
   )
 }
 
