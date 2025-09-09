@@ -86,7 +86,7 @@ const buttonGroups = [
         href: makeMailto(
           'pizza@example.com',
           'Pizza collab',
-          'Let`s talk about pizza 🍕...'
+          "Let`s talk about pizza 🍕..."
         ),
       },
     ],
@@ -97,18 +97,19 @@ const buttonGroups = [
 
 const MarqueeButton = dynamic(() => import('./buttons/MarqueeButton'));
 
-const headings = ["Lets", "Connect"];
+const headings = ["Let's", "Connect"];
 
 
 const Contacts = ({ id }: { id?: string }) => {
   return (
     <div id={id} className="flex flex-col sm:flex-row px-6 pt-40 sm:pt-52 pb-14 sm:pb-0">
+
       <div className="flex flex-col">
         <BigHeading>{headings[0]}</BigHeading>
         <BigHeading>{headings[1]}</BigHeading>
       </div>
-      <section className="sm:pt-0 py-8 sm:-translate-x-28 sm:-translate-y-10 border-2 border-red-500">
-        <p className='h2--uppercase uppercase pl-0 sm:pl-18'>I'm always interested about</p>
+      <section className="sm:pt-0 py-8 sm:-translate-x-28 sm:-translate-y-10">
+        <p className='h2--uppercase uppercase pl-0 sm:pl-18'>I&rsquo;m always interested about</p>
         <div className='flex flex-col pt-4 gap-3'>
 
           {buttonGroups.map((group, i) => (
