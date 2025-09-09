@@ -16,7 +16,7 @@ export default function About({ id }: { id?: string }) {
         font-medium'>Christopher  Glenn</h3>
       </section>
       <div className='flex sm:flex-row flex-col'>
-        <div className='sm:pt-14 pt-12 sm:pl-70 pl-10 sm:w-[60rem] font-bold font-neue text-white sm:text-[2.3rem] text-[0.875rem] sm:leading-12'>
+        <div className='h2--uppercase sm:pt-14 pt-12 sm:pl-70 pl-10 sm:w-[60rem] sm:leading-12'>
           <p className='text-right'>I am an enthusiastic lead </p>
           developer and full-stack developer who specializes in
           building websites and mobile applications. I manage every aspect of freelance projects

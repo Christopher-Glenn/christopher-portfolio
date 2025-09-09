@@ -45,7 +45,7 @@ export default function Hero() {
         <div
           className="flex flex-row sm:h-50 sm:w-90 h-25 w-50 relative z-10"
         >
-          <Image 
+          <Image
             src="/images/decagramStar.webp"
             alt='decagram-star'
             className='h-auto sm:w-14 w-6 object-contain pb-32'
@@ -54,8 +54,8 @@ export default function Hero() {
           />
 
           <h1 className="font-maelstrom text-8xl sm:text-[12rem] text-cozywhite">
-              {day.toString().padStart(2, '0')}
-            </h1>
+            {day.toString().padStart(2, '0')}
+          </h1>
           <div className="flex flex-col pl-0 sm:pl-2 text-cozywhite mt-auto pb-4 sm:pb-10">
             <span className="font-migra lowercase font-medium text-base sm:text-3xl">{month}</span>
             <span className="font-neue font-semibold text-sm sm:text-xl leading-none">
@@ -64,7 +64,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-   
+
       <div className="flex flex-col justify-between sm:flex-row sm:px-10 px-4 sm:-translate-y-16">
         <section className="flex flex-col sm:w-[45rem] w-60 space-y-0">
           <p className="text-skintone font-migra sm:text-3xl text-[1.2rem] font-medium sm:leading-none">
@@ -89,7 +89,13 @@ export default function Hero() {
             </AscendText>
           </div>
           <div className="sm:pl-[28rem] pl-[10rem] sm:pt-6 pt-4">
-            <MarqueeButton title="Contact Me" classname="bg-none text-white" />
+            <a
+              href='https://mail.google.com/mail/?view=cm&fs=1&to=christopherglenn.bedis@wvsu.edu.ph'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MarqueeButton title="Contact Me" classname="bg-none text-white" />
+            </a>
           </div>
         </div>
       </div>
