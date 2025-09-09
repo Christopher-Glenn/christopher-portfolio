@@ -17,7 +17,6 @@ export default function CenterHoleOverlay({ state }: { state?: "diamond" | "expa
     updateSize();
     window.addEventListener('resize', updateSize);
 
-    // Landing animation
     setTimeout(() => {
       controls.start('expanded');
     }, 500);

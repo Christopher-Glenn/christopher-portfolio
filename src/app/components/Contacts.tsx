@@ -13,7 +13,7 @@ const buttonGroups = [
       {
         title: 'Ux/ui design',
         href: makeMailto(
-          'hello@patrickdavid.com',
+          'christopherglenn.bedis@wvsu.edu.ph',
           '💼 Could you help me with UX/UI design?',
           'Hi, I found your portfolio and wanted to ask about UX/UI design...'
         ),
@@ -32,7 +32,7 @@ const buttonGroups = [
     className: 'sm:pl-14',
     buttons: [
       {
-        title: 'Project Manager',
+        title: 'Project Management',
         href: makeMailto(
           'pm@example.com',
           'Project Manager inquiry',
@@ -93,6 +93,10 @@ const buttonGroups = [
   },
 ];
 
+const Socials = [
+  "Facebook", "Instagram", "LinkedIn", "Fiverr"
+]
+
 
 
 const MarqueeButton = dynamic(() => import('./buttons/MarqueeButton'));
@@ -102,25 +106,53 @@ const headings = ["Let's", "Connect"];
 
 const Contacts = ({ id }: { id?: string }) => {
   return (
-    <div id={id} className="flex flex-col sm:flex-row px-6 pt-40 sm:pt-52 pb-14 sm:pb-0">
+    <div id={id} className="flex flex-col sm:flex-row px-6 pt-40 sm:pt-72 pb-14 sm:pb-0">
 
-      <div className="flex flex-col">
+      <div className="relative flex flex-col">
         <BigHeading>{headings[0]}</BigHeading>
         <BigHeading>{headings[1]}</BigHeading>
       </div>
-      <section className="sm:pt-0 py-8 sm:-translate-x-28 sm:-translate-y-10">
-        <p className='h2--uppercase uppercase pl-0 sm:pl-18'>I&rsquo;m always interested about</p>
-        <div className='flex flex-col pt-4 gap-3'>
+      <section className="sm:pt-0 pt-8">
+        <div className='sm:-translate-x-28 sm:-translate-y-10'>
+          <p className='h2--uppercase uppercase pl-0 sm:pl-18'>I&rsquo;m always interested about</p>
+          <div className='flex flex-col pt-4 gap-3'>
 
-          {buttonGroups.map((group, i) => (
-            <div key={i} className={`flex flex-col sm:flex-row gap-3 ${group.className}`}>
-              {group.buttons.map((btn) => (
-                <a key={btn.title} href={btn.href}>
-                  <MarqueeButton title={btn.title} classname="bg-none text-white" />
-                </a>
-              ))}
-            </div>
-          ))}
+            {buttonGroups.map((group, i) => (
+              <div key={i} className={`flex flex-col sm:flex-row gap-3 ${group.className}`}>
+                {group.buttons.map((btn) => (
+                  <a key={btn.title} href={btn.href}>
+                    <MarqueeButton title={btn.title} classname="bg-none text-white" />
+                  </a>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className='sm:mt-40 mt-28 sm:pl-12'>
+          <div className='flex flex-row sm:gap-8 py-4'>
+            <h2 className='h2--uppercase uppercase'>Are you minding a project?</h2>
+            <MarqueeButton title={
+              <>
+                <span className="sm:hidden">Contact</span>
+                <span className="hidden sm:inline">Contact Me</span>
+              </>
+            }
+              classname='bg-white text-muted font-medium' />
+          </div>
+          <div className='flex flex-row border-t-1 border-gray-200/50 py-4 gap-6'>
+            <>
+              <a href='https://www.facebook.com/Noonelikesyou.btch'>
+                <span className='h3--uppercase'>{Socials[0]}</span>
+              </a>
+              <span className='h3--uppercase'>{Socials[1]}</span>
+              <a href='https://www.linkedin.com/in/christopher-glenn-bedis-a60bb437b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
+                <span className='h3--uppercase'>{Socials[2]}</span>
+              </a>
+              <a href="https://www.fiverr.com/s/EgDewoe">
+                <span className='h3--uppercase'>{Socials[3]}</span>
+              </a>
+            </>
+          </div>
         </div>
       </section>
 

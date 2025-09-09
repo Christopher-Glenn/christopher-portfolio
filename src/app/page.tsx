@@ -4,31 +4,46 @@ import Hero from '@/app/components/Hero';
 import Navbar from '@/app/components/Navbar';
 import About from './components/About';
 import Works from '@/app/components/Works';
-import { useScrollOpacity } from '../../lib/useScrollOpacity';
-import CenterHoleOverlay from './components/animations/Centerhole';
 import Cases from './components/OtherCases';
 import Contacts from './components/Contacts';
+import CenterHoleOverlay from './components/animations/Centerhole';
 import Image from 'next/image';
+import { useScrollFade } from '../../lib/useScrollFade';
 
 export default function Home() {
-  const opacity = useScrollOpacity();
+  const opacity = useScrollFade({
+    inStart: 300,
+    inEnd: 800,
+    outStart: 3700,
+    outEnd: 4200,
+    defaultOpacity: 1,
+  });
+
+  const mobileOpacity = useScrollFade({
+    outStart: 2600,
+    outEnd: 3000,
+    defaultOpacity: 1,
+  });
 
   return (
     <main className="relative min-h-screen">
-      <div className="fixed inset-0 -z-20 bg-[#131313] sm:hidden" />
-
-      <div className="fixed inset-0 -z-20 hidden sm:block">
+      <div className="fixed inset-0 -z-30">
         <Image
           src="/images/heropage-bg.webp"
           alt="background-image"
           fill
           priority
-          className="object-cover object-left-top"
+          className="object-cover object-left-top brightness-90"
         />
       </div>
 
       <div
-        className="fixed inset-0 -z-10 hidden sm:block sm:transition-all sm:duration-300"
+        className="fixed inset-0 -z-20 sm:hidden bg-[#131313] transition-opacity duration-300"
+        style={{ opacity: mobileOpacity }}
+      />
+
+      <div
+        className="fixed inset-0 -z-10 hidden sm:block transition-opacity duration-300"
         style={{ backgroundColor: `rgba(19, 19, 19, ${opacity})` }}
       />
 
